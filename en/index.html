@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanbyeol Viewer – HWP Viewer for Mac (Open HWP &amp; HWPX)</title>
+<meta name="description" content="A free HWP viewer for Mac. Open HWP and HWPX files on macOS without Hancom Office, convert HWP to PDF, and listen to documents read aloud. Nothing leaves your Mac.">
+<link rel="canonical" href="https://sunstardad.github.io/hanbyeolviewer/en/">
+<link rel="alternate" hreflang="ko" href="https://sunstardad.github.io/hanbyeolviewer/">
+<link rel="alternate" hreflang="en" href="https://sunstardad.github.io/hanbyeolviewer/en/">
+<link rel="alternate" hreflang="x-default" href="https://sunstardad.github.io/hanbyeolviewer/">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hanbyeol Viewer">
+<meta property="og:title" content="Hanbyeol Viewer – HWP Viewer for Mac">
+<meta property="og:description" content="Open HWP and HWPX files on a Mac, convert them to PDF, and listen to them read aloud. Free, and everything stays on your Mac.">
+<meta property="og:url" content="https://sunstardad.github.io/hanbyeolviewer/en/">
+<meta property="og:image" content="https://sunstardad.github.io/hanbyeolviewer/img/en/01-outline.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hanbyeol Viewer",
+  "alternateName": "한별뷰어",
+  "description": "A Mac viewer for HWP and HWPX (Korean word processor) documents, PDF, Word files and comics, with read aloud and translation.",
+  "operatingSystem": "macOS 14 or later",
+  "applicationCategory": "ProductivityApplication",
+  "url": "https://sunstardad.github.io/hanbyeolviewer/en/",
+  "downloadUrl": "https://apps.apple.com/app/id6832940512",
+  "image": "https://sunstardad.github.io/hanbyeolviewer/img/icon.png",
+  "screenshot": "https://sunstardad.github.io/hanbyeolviewer/img/en/01-outline.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "Taebong Kim" }
+}
+</script>
+<style>
+  :root {
+    --bg: #ffffff; --panel: #f3f7f6; --text: #1c2a28; --muted: #5b6b68;
+    --line: #d8e2df; --accent: #0f6b62; --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121a19; --panel: #1a2523; --text: #e6efec; --muted: #9fb0ac;
+            --line: #2b3a37; --accent: #5fc9bb; --accent-text: #0c1514; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+         color: var(--text); background: var(--bg); }
+  a { color: var(--accent); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; font-size: 15px; }
+  header.top .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; }
+  header.top img { width: 32px; height: 32px; }
+  .hero { text-align: center; padding: 36px 0 28px; }
+  .hero img.icon { width: 112px; height: 112px; }
+  h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.2; margin: 18px 0 12px; letter-spacing: -0.02em; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 auto 24px; }
+  .cta { display: inline-block; background: var(--accent); color: var(--accent-text); text-decoration: none;
+         font-weight: 700; padding: 14px 26px; border-radius: 12px; }
+  .cta:hover { filter: brightness(1.08); }
+  .small { font-size: 14px; color: var(--muted); margin-top: 12px; }
+  .shot { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); display: block; }
+  .hero .shot { margin-top: 36px; }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: clamp(22px, 3.4vw, 28px); line-height: 1.3; margin: 0 0 12px; }
+  h3 { font-size: 18px; margin: 26px 0 6px; }
+  .feature { display: grid; grid-template-columns: 1fr 1.25fr; gap: 32px; align-items: center; }
+  .feature.flip > div:first-child { order: 2; }
+  .feature ul { padding-left: 20px; margin: 10px 0 0; }
+  .feature li, .notes li { margin: 4px 0; }
+  .faq p { margin: 0; }
+  .center { text-align: center; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; font-size: 14px; color: var(--muted); }
+  footer p { margin: 6px 0; }
+  @media (max-width: 760px) {
+    .feature { grid-template-columns: 1fr; gap: 18px; }
+    .feature.flip > div:first-child { order: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="brand" href="./"><img src="../img/icon.png" alt="" width="32" height="32">Hanbyeol Viewer</a>
+  <nav><a href="../" lang="ko" hreflang="ko">한국어</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <img class="icon" src="../img/icon.png" alt="Hanbyeol Viewer app icon" width="112" height="112">
+  <h1>HWP viewer for Mac:<br>open HWP and HWPX files</h1>
+  <p class="lead">Received a Korean .hwp or .hwpx file you can't open on your Mac? Hanbyeol Viewer opens it without Hancom Office, converts it to PDF, reads it aloud and translates it on the spot.</p>
+  <a class="cta" href="https://apps.apple.com/app/id6832940512">Get it free on the Mac App Store</a>
+  <p class="small">Free · No ads · No account · macOS 14 or later (Apple silicon)</p>
+  <img class="shot" src="../img/en/01-outline.png" width="1440" height="900"
+       alt="An HWP document open on a Mac in Hanbyeol Viewer, with its table of contents">
+</div>
+
+<section id="open">
+  <div class="feature">
+    <div>
+      <h2>Open HWP and HWPX files on macOS</h2>
+      <p>HWP and HWPX are the file formats of the Korean word processor Hangul. Hanbyeol Viewer opens both, along with PDF and Word files.</p>
+    </div>
+    <div>
+      <ul>
+        <li>Opens HWP, HWPX, PDF and Word (DOCX, DOC, RTF)</li>
+        <li>Fit width, full page, two-page view, and a text-only reading mode</li>
+        <li>Table of contents (built from headings when the file has none), bookmarks and search</li>
+        <li>Highlights, underlines and notes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="convert">
+  <div class="feature flip">
+    <div>
+      <h2>Convert HWP to PDF on your Mac</h2>
+      <p>No upload to a conversion website. Files are converted on your Mac, so work documents and personal papers stay with you.</p>
+      <ul>
+        <li>HWP and HWPX to PDF</li>
+        <li>PDF to HWPX, and save as Word (DOCX)</li>
+        <li>Convert many files at once</li>
+        <li>Extract pages and merge PDFs</li>
+      </ul>
+    </div>
+    <div><img class="shot" loading="lazy" src="../img/en/05-convert.png" width="1440" height="900"
+         alt="Converting an HWP file to PDF on a Mac"></div>
+  </div>
+</section>
+
+<section id="listen">
+  <div class="feature">
+    <div>
+      <h2>Listen, translate and collect words</h2>
+      <p>Have a document read aloud, or select a sentence to see its translation. Speech and translation both run on your Mac.</p>
+      <ul>
+        <li>Read aloud with 10 voices and adjustable speed (tuned for Korean)</li>
+        <li>Sleep timer</li>
+        <li>Select text to translate it and save words to a wordbook (macOS 15 or later)</li>
+        <li>Review cards and export for Anki</li>
+      </ul>
+    </div>
+    <div><img class="shot" loading="lazy" src="../img/en/03-translate.png" width="1440" height="900"
+         alt="Translating a selected sentence in a document on a Mac"></div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <h2>Questions</h2>
+
+  <h3>How do I open an HWP file on a Mac?</h3>
+  <p>Get Hanbyeol Viewer from the Mac App Store, then right-click the HWP file in Finder and choose Open With → Hanbyeol Viewer. You do not need Hancom Office.</p>
+
+  <h3>Can I edit an HWP file?</h3>
+  <p>No. Hanbyeol Viewer is a reader and has no editing. If you need to change the text, save the document as Word (DOCX) and edit it in another app; only the text is kept, without tables and layout.</p>
+
+  <h3>Is it free?</h3>
+  <p>Yes. There are no ads and no account.</p>
+
+  <h3>Which files cannot be opened?</h3>
+  <p>Password-protected, DRM-locked or distribution-locked HWP documents.</p>
+
+  <h3>Is there an iPhone or iPad version?</h3>
+  <p>Not at the moment. The app is for Mac only.</p>
+
+  <p class="center" style="margin-top:32px">
+    <a class="cta" href="https://apps.apple.com/app/id6832940512">Get it free on the Mac App Store</a>
+  </p>
+</section>
+</main>
+
+<footer>
+  <p><a href="../privacy.html">Privacy Policy</a> · Contact: <a href="mailto:xoxodorik@gmail.com">xoxodorik@gmail.com</a></p>
+  <p>Hanbyeol Viewer is not affiliated with Hancom. "HWP" is used only as the name of a file format the app reads.</p>
+  <p>Mac, macOS, Finder and App Store are trademarks of Apple Inc.</p>
+  <p>© 2026 Taebong Kim</p>
+</footer>
+
+</div>
+</body>
+</html>
