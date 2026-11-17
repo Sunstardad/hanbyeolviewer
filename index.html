@@ -107,6 +107,7 @@
   .tag { display: inline-block; font-size: 13px; font-weight: 600; color: var(--accent);
          border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; margin-bottom: 8px; }
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+  #more .cards { grid-template-columns: repeat(2, 1fr); }
   .card { background: var(--panel); border-radius: 12px; padding: 18px 20px; }
   .card h3 { margin-top: 0; }
   .card p { margin: 0; color: var(--muted); font-size: 16px; }
@@ -119,6 +120,7 @@
     .feature { grid-template-columns: 1fr; gap: 18px; }
     .feature.flip > div:first-child { order: 0; }
     .cards { grid-template-columns: 1fr; }
+    #more .cards { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -153,6 +155,8 @@
         <li>너비 맞춤, 페이지 전체, 두 쪽 보기, 글자만 크게 읽는 텍스트 읽기</li>
         <li>목차(없으면 편·장·절·조 제목을 찾아 자동으로 만듦), 책갈피, 문서 안 검색</li>
         <li>형광펜, 밑줄, 메모</li>
+        <li>메모 모아보기: 모든 문서의 형광펜·밑줄·메모를 한곳에서 찾고 Markdown·텍스트 파일로 내보내기</li>
+        <li>암호가 걸린 PDF도 암호를 입력해 열기</li>
       </ul>
     </div>
   </div>
@@ -168,6 +172,7 @@
         <li>PDF → 한글(HWPX), 워드(DOCX)로 저장</li>
         <li>여러 파일 한꺼번에 변환(일괄 변환)</li>
         <li>쪽 추출, PDF 합치기</li>
+        <li>암호 PDF: 열 때 암호를 묻는 PDF 사본 저장</li>
         <li>AirDrop, 메일, 메시지로 공유</li>
       </ul>
     </div>
@@ -235,7 +240,7 @@
     </div>
     <div class="card">
       <h3>영어 단어장</h3>
-      <p>모르는 낱말과 문장을 단어장에 모읍니다. 복습 카드와 Anki로 내보내기는 버전 1.1부터 됩니다.</p>
+      <p>모르는 낱말과 문장을 단어장에 모읍니다. 복습 카드로 외우고 Anki로 내보낼 수 있습니다.</p>
     </div>
   </div>
 </section>
@@ -244,13 +249,16 @@
   <h2>그 밖의 기능</h2>
   <div class="cards">
     <div class="card">
-      <span class="tag">버전 1.1부터</span>
       <h3>Finder에서 HWP 미리보기</h3>
       <p>HWP·HWPX 파일을 고르고 스페이스 바를 누르면 열지 않고 미리 봅니다. 파일 아이콘에도 첫 쪽이 보입니다.</p>
     </div>
     <div class="card">
       <h3>만화 뷰어</h3>
       <p>CBZ · CBR · 이미지 폴더를 두 쪽 펼침이나 세로 이어 보기로 읽습니다.</p>
+    </div>
+    <div class="card">
+      <h3>앱 잠금</h3>
+      <p>앱을 열 때 Touch ID나 Mac 로그인 암호로 확인합니다. 문서 위쪽의 자물쇠 버튼으로 바로 잠글 수 있습니다.</p>
     </div>
     <div class="card">
       <h3>개인정보</h3>
@@ -281,7 +289,7 @@
   <p>지금은 Mac 전용입니다.</p>
 
   <h3>안 열리는 한글 파일도 있나요?</h3>
-  <p>암호가 걸렸거나 DRM·배포용으로 잠긴 한글 문서는 열지 못합니다.</p>
+  <p>암호가 걸렸거나 DRM·배포용으로 잠긴 한글 문서는 열지 못합니다. 암호가 걸린 PDF는 암호를 입력해 열 수 있습니다.</p>
 
   <h3>맥북에 한글(한컴오피스)이 없어도 한글 파일을 볼 수 있나요?</h3>
   <p>네. 한별뷰어는 한글(한컴오피스) 없이 HWP·HWPX 파일을 엽니다. 무료이고, 한컴오피스를 사거나 설치할 필요가 없습니다. 다만 보기와 변환만 되고 편집은 안 됩니다.</p>
@@ -306,6 +314,8 @@
     <li>워드로 저장하면 글자만 들어가고 표와 배치는 빠집니다.</li>
     <li>읽어주기 음성은 한국어에 맞춰져 있습니다.</li>
     <li>번역과 단어장은 macOS 15 이상에서 동작합니다.</li>
+    <li>앱 잠금은 앱 화면만 가립니다. 파일 자체는 잠그지 않습니다.</li>
+    <li>암호 PDF의 암호는 잊으면 되찾을 수 없습니다.</li>
     <li>한컴오피스가 설치된 Mac에서는 Finder 미리 보기에 한컴오피스의 미리 보기가 나옵니다.</li>
     <li>인터페이스 언어: 한국어, 영어, 일본어, 중국어(간체), 러시아어, 스페인어</li>
   </ul>
