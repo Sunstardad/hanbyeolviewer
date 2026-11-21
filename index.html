@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>한별뷰어 – 맥·맥북에서 한글(HWP·HWPX) 파일 열기, PDF 변환, 읽어주기</title>
-<meta name="description" content="맥북에 한글(한컴오피스)이 없어도 HWP·HWPX 한글 파일을 바로 여는 무료 뷰어. HWP를 PDF로 변환하고, 한글·PDF 문서를 소리로 듣고, 모르는 문장은 번역해 단어장에 모읍니다. 문서는 Mac 밖으로 나가지 않습니다.">
+<meta name="description" content="맥북에 한글(한컴오피스)이 없어도 HWP·HWPX 한글 파일을 바로 여는 무료 뷰어. HWP를 PDF로 변환하고, 수업을 녹음하면 받아 적고 요약하며, 한글·PDF 문서를 소리로 듣고, 모르는 문장은 번역해 단어장에 모읍니다. 문서와 녹음은 Mac 밖으로 나가지 않습니다.">
 <link rel="canonical" href="https://sunstardad.github.io/hanbyeolviewer/">
 <link rel="alternate" hreflang="ko" href="https://sunstardad.github.io/hanbyeolviewer/">
 <link rel="alternate" hreflang="en" href="https://sunstardad.github.io/hanbyeolviewer/en/">
@@ -14,9 +14,9 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="한별뷰어">
 <meta property="og:title" content="한별뷰어 – 맥에서 한글(HWP·HWPX) 파일 열기">
-<meta property="og:description" content="맥에서 HWP·HWPX를 열고, PDF로 바꾸고, 소리로 듣는 무료 뷰어. 문서는 Mac 밖으로 나가지 않습니다.">
+<meta property="og:description" content="맥에서 HWP·HWPX를 열고, PDF로 바꾸고, 수업을 녹음해 받아 적는 무료 뷰어. 문서와 녹음은 Mac 밖으로 나가지 않습니다.">
 <meta property="og:url" content="https://sunstardad.github.io/hanbyeolviewer/">
-<meta property="og:image" content="https://sunstardad.github.io/hanbyeolviewer/img/01-outline.png">
+<meta property="og:image" content="https://sunstardad.github.io/hanbyeolviewer/img/01-library.png">
 <meta name="twitter:card" content="summary_large_image">
 <!-- 검색 등록 때 받은 확인 코드를 넣는 자리입니다.
 <meta name="google-site-verification" content="">
@@ -28,14 +28,14 @@
   "@type": "SoftwareApplication",
   "name": "한별뷰어",
   "alternateName": "Hanbyeol Viewer",
-  "description": "맥에서 한글(HWP·HWPX), PDF, 워드 문서와 만화 파일을 읽고, 소리로 듣고, 번역하는 뷰어",
-  "operatingSystem": "macOS 14 이상",
+  "description": "맥에서 한글(HWP·HWPX), PDF, 워드 문서와 만화 파일을 읽고, 소리로 듣고, 번역하고, 수업을 녹음해 받아 적는 뷰어",
+  "operatingSystem": "macOS 26 이상",
   "applicationCategory": "ProductivityApplication",
   "inLanguage": ["ko", "en", "ja", "zh-Hans", "ru", "es"],
   "url": "https://sunstardad.github.io/hanbyeolviewer/",
   "downloadUrl": "https://apps.apple.com/kr/app/id6832940512",
   "image": "https://sunstardad.github.io/hanbyeolviewer/img/icon.png",
-  "screenshot": "https://sunstardad.github.io/hanbyeolviewer/img/01-outline.png",
+  "screenshot": "https://sunstardad.github.io/hanbyeolviewer/img/01-library.png",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
   "author": { "@type": "Person", "name": "Taebong Kim" }
 }
@@ -57,6 +57,8 @@
       "acceptedAnswer": { "@type": "Answer", "text": "네, 무료입니다. 광고도 없고 계정을 만들 필요도 없습니다." } },
     { "@type": "Question", "name": "아이폰이나 아이패드에서도 쓸 수 있나요?",
       "acceptedAnswer": { "@type": "Answer", "text": "지금은 Mac 전용입니다." } },
+    { "@type": "Question", "name": "안 열리는 한글 파일도 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "암호가 걸렸거나 DRM·배포용으로 잠긴 한글 문서는 열지 못합니다. 암호가 걸린 PDF는 암호를 입력해 열 수 있습니다." } },
     { "@type": "Question", "name": "맥북에 한글(한컴오피스)이 없어도 한글 파일을 볼 수 있나요?",
       "acceptedAnswer": { "@type": "Answer", "text": "네. 한별뷰어는 한글(한컴오피스) 없이 HWP·HWPX 파일을 엽니다. 무료이고, 한컴오피스를 사거나 설치할 필요가 없습니다. 다만 보기와 변환만 되고 편집은 안 됩니다." } },
     { "@type": "Question", "name": "맥북에서 한글 파일이 안 열릴 때는 어떻게 하나요?",
@@ -64,7 +66,11 @@
     { "@type": "Question", "name": "한글 파일을 PDF로 바꿔 과제로 제출할 수 있나요?",
       "acceptedAnswer": { "@type": "Answer", "text": "네. 문서를 열고 PDF로 저장하면 됩니다. PDF 여러 개를 하나로 합칠 수도 있습니다. 내용을 채워 넣어야 하는 과제 양식은 한별뷰어에서 고칠 수 없으므로, 워드(DOCX)로 저장해 다른 앱에서 작성해야 합니다. 이때 글자만 들어가고 표와 배치는 빠집니다." } },
     { "@type": "Question", "name": "영어 논문 PDF를 번역해 주나요?",
-      "acceptedAnswer": { "@type": "Answer", "text": "읽다가 선택한 문장의 해석과 낱말 뜻을 보여 줍니다. 문서 전체를 한 번에 번역하지는 않습니다. 번역은 macOS 15 이상에서 동작합니다." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "읽다가 선택한 문장의 해석과 낱말 뜻을 보여 줍니다. 문서 전체를 한 번에 번역하지는 않습니다. 번역은 Mac 안에서 처리합니다." } },
+    { "@type": "Question", "name": "수업을 녹음해 받아 적을 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "네. 문서 옆 녹음 모드에서 수업을 녹음하면 Mac 안에서 문장으로 받아 적고, 그때 보던 쪽도 함께 기록합니다. 강의 노트에서 문장을 누르면 그 부분부터 다시 듣습니다. 녹음하기 전에 강사와 학교의 규칙을 확인해 주세요." } },
+    { "@type": "Question", "name": "AI로 문서를 요약할 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Apple Intelligence를 켠 Mac에서는 도우미가 지금 쪽이나 문서 전체를 요약하고, 문서에 대해 물은 것에 근거가 된 쪽과 함께 답합니다. Mac 안의 모델로 처리해 문서를 서버로 보내지 않습니다. AI가 만든 내용은 틀릴 수 있으니 답에 붙은 쪽에서 확인해 주세요." } },
     { "@type": "Question", "name": "PDF를 읽어주는 기능이 있나요?",
       "acceptedAnswer": { "@type": "Answer", "text": "네. PDF와 한글 문서를 소리로 읽어 줍니다. 음성은 한국어에 맞춰져 있어 한글로 된 문서에 알맞습니다." } }
   ]
@@ -136,11 +142,11 @@
 <div class="hero">
   <img class="icon" src="img/icon.png" alt="한별뷰어 앱 아이콘" width="112" height="112">
   <h1>맥에서 한글(HWP·HWPX) 파일을<br>여는 뷰어, 한별뷰어</h1>
-  <p class="lead">맥북에서 한글 파일이 안 열릴 때 쓰는 무료 뷰어입니다. HWP·HWPX와 PDF를 열고, PDF로 바꿔 저장하고, 소리로 듣고, 모르는 문장은 그 자리에서 번역합니다.</p>
+  <p class="lead">맥북에서 한글 파일이 안 열릴 때 쓰는 무료 뷰어입니다. HWP·HWPX와 PDF를 열고, PDF로 바꿔 저장하고, 수업을 녹음해 받아 적고, 소리로 듣고, 모르는 문장은 그 자리에서 번역합니다.</p>
   <a class="cta" href="https://apps.apple.com/kr/app/id6832940512">Mac App Store에서 무료로 받기</a>
-  <p class="small">무료 · 광고 없음 · 계정 없음 · macOS 14 이상(Apple 실리콘 Mac)</p>
-  <img class="shot" src="img/01-outline.png" width="1440" height="900"
-       alt="맥에서 한글 HWP 문서를 열어 목차와 함께 보는 한별뷰어 화면">
+  <p class="small">무료 · 광고 없음 · 계정 없음 · macOS 26 이상(Apple 실리콘 Mac)</p>
+  <img class="shot" src="img/01-library.png" width="1440" height="900"
+       alt="이어서 읽기 카드와 강의 노트, 최근 읽은 문서·즐겨찾기 선반을 보여 주는 한별뷰어 서재 화면">
 </div>
 
 <section id="open">
@@ -152,6 +158,7 @@
     <div>
       <ul>
         <li>HWP · HWPX · PDF · 워드(DOCX · DOC · RTF) 열기</li>
+        <li>서재: 최근 문서·즐겨찾기·문서함이 선반별로 놓이고, 어디까지 읽었는지 표시</li>
         <li>너비 맞춤, 페이지 전체, 두 쪽 보기, 글자만 크게 읽는 텍스트 읽기</li>
         <li>목차(없으면 편·장·절·조 제목을 찾아 자동으로 만듦), 책갈피, 문서 안 검색</li>
         <li>형광펜, 밑줄, 메모</li>
@@ -162,11 +169,49 @@
   </div>
 </section>
 
-<section id="convert">
+<section id="lecture">
+  <div class="feature">
+    <div>
+      <h2>수업 녹음과 받아쓰기</h2>
+      <p>문서 옆 녹음 모드에서 수업을 녹음하면 Mac 안에서 문장으로 받아 적습니다. 그때 보던 쪽도 함께 기록해, 강의 노트에서 문장을 누르면 그 부분부터 다시 듣고 그 쪽이 열립니다.</p>
+      <ul>
+        <li>녹음하면서 받아쓰기, 보던 쪽 기록</li>
+        <li>문장을 눌러 그 부분부터 다시 듣기</li>
+        <li>문장마다 번역 붙이기</li>
+        <li>Apple Intelligence로 핵심과 용어를 정리하고, 용어는 단어장에 넣기</li>
+        <li>텍스트·Markdown·PDF·한글(HWPX)·워드로 내보내기</li>
+      </ul>
+    </div>
+    <div><img class="shot" loading="lazy" src="img/03-lecture.png" width="1440" height="900"
+         alt="수업을 녹음해 문장으로 받아 적고 보던 쪽과 함께 기록한 강의 노트 화면"></div>
+  </div>
+</section>
+
+<section id="assistant">
   <div class="feature flip">
+    <div>
+      <h2>Apple Intelligence 도우미: 요약과 질문</h2>
+      <p>지금 쪽, 고른 글, 문서 전체를 요약하고, 문서에 대해 물은 것에 근거가 된 쪽과 함께 답합니다. Mac 안의 모델로 처리하므로 문서가 서버로 가지 않습니다.</p>
+      <ul>
+        <li>지금 쪽 · 고른 글 · 문서 전체 요약</li>
+        <li>질문하면 근거가 된 쪽과 함께 답함</li>
+        <li>쉬운 말로, 핵심 용어, 복습 문제, 고쳐 쓰기</li>
+        <li>답은 새 문서로 저장(원본 파일은 고치지 않음)</li>
+        <li>Apple Intelligence를 켠 Mac에서 쓸 수 있습니다</li>
+      </ul>
+    </div>
+    <div><img class="shot" loading="lazy" src="img/02-assistant.png" width="1440" height="900"
+         alt="Apple Intelligence 도우미가 문서를 요약하고 근거가 된 쪽을 함께 보여 주는 화면"></div>
+  </div>
+</section>
+
+<section id="convert">
+  <div class="feature">
     <div>
       <h2>HWP를 PDF로, PDF를 한글·워드로 변환</h2>
       <p>변환 사이트에 파일을 올리지 않습니다. 변환은 Mac 안에서 이루어지므로 회사 문서나 개인 서류도 밖으로 나가지 않습니다.</p>
+    </div>
+    <div>
       <ul>
         <li>HWP · HWPX → PDF 변환</li>
         <li>PDF → 한글(HWPX), 워드(DOCX)로 저장</li>
@@ -176,8 +221,6 @@
         <li>AirDrop, 메일, 메시지로 공유</li>
       </ul>
     </div>
-    <div><img class="shot" loading="lazy" src="img/05-convert.png" width="1440" height="900"
-         alt="맥에서 HWP 파일을 PDF로 변환하는 한별뷰어의 저장 화면"></div>
   </div>
 </section>
 
@@ -186,6 +229,8 @@
     <div>
       <h2>한글·PDF 문서 읽어주기(TTS)</h2>
       <p>문서를 소리 내어 읽어 줍니다. 긴 보고서나 PDF 전자책을 눈으로 따라가지 않고 들을 수 있습니다.</p>
+    </div>
+    <div>
       <ul>
         <li>한국어 목소리 10가지, 속도 조절</li>
         <li>읽는 문장 표시: 지금 읽는 문장을 문서 위에 노란색으로 표시</li>
@@ -193,28 +238,41 @@
         <li>내 음악 파일을 틀어 놓고 PDF 전자책이나 만화 읽기</li>
       </ul>
     </div>
-    <div><img class="shot" loading="lazy" src="img/02-read-aloud.png" width="1440" height="900"
-         alt="PDF와 한글 문서를 한국어 음성으로 읽어 주는 읽어주기 화면"></div>
   </div>
 </section>
 
 <section id="translate">
-  <div class="feature flip">
+  <div class="feature">
     <div>
       <h2>PDF 번역과 단어장</h2>
-      <p>영어 PDF를 읽다가 글자를 선택하면 해석과 낱말 뜻이 바로 나옵니다. 번역도 Mac 안에서 처리합니다. (macOS 15 이상)</p>
+      <p>영어 PDF를 읽다가 글자를 선택하면 해석과 낱말 뜻이 바로 나옵니다. 번역도 Mac 안에서 처리합니다.</p>
       <ul>
         <li>선택한 문장의 해석과 낱말 뜻 표시</li>
-        <li>낱말과 문장을 단어장에 저장</li>
         <li>끊어 읽기: 긴 영어 문장을 뜻 단위로 끊어 표시</li>
-        <li>단어장 복습 카드, Anki로 내보내기</li>
-        <li>단어 학습지: 저장한 단어를 A4 학습지로 PDF 저장하거나 인쇄</li>
-        <li>단어장에서 그 단어를 저장한 문서의 그 쪽으로 이동, 실수로 지운 단어 되돌리기</li>
+        <li>낱말과 문장을 단어장에 저장</li>
         <li>글을 쓰면 옆에 번역이 나오는 번역 문서</li>
       </ul>
     </div>
-    <div><img class="shot" loading="lazy" src="img/03-translate.png" width="1440" height="900"
+    <div><img class="shot" loading="lazy" src="img/04-translate.png" width="1440" height="900"
          alt="맥북에서 PDF 문장을 선택해 번역하고 단어장에 저장하는 화면"></div>
+  </div>
+</section>
+
+<section id="wordbook">
+  <div class="feature flip">
+    <div>
+      <h2>단어장 복습 카드와 학습지</h2>
+      <p>모은 낱말과 문장을 복습 카드로 외우고, 학습지로 인쇄해 직접 써 봅니다.</p>
+      <ul>
+        <li>복습 카드: 발음 기호와 뜻을 보고 다시·어려움·좋음·쉬움을 고르면 다음 복습 날이 정해짐</li>
+        <li>단어 학습지: 저장한 단어를 A4 학습지로 PDF 저장하거나 인쇄(뜻을 빼고 빈 줄 가능)</li>
+        <li>Anki로 내보내기</li>
+        <li>낱말에 Image Playground로 만든 그림 붙이기</li>
+        <li>그 단어를 저장한 문서의 그 쪽으로 이동, 실수로 지운 단어 되돌리기</li>
+      </ul>
+    </div>
+    <div><img class="shot" loading="lazy" src="img/05-wordbook.png" width="1440" height="900"
+         alt="저장한 낱말과 문장을 복습 카드와 학습지로 공부하는 단어장 화면"></div>
   </div>
 </section>
 
@@ -231,8 +289,16 @@
       <p>한글 파일을 PDF로 바꾸고, PDF 여러 개를 하나로 합칩니다. 파일을 변환 사이트에 올리지 않습니다.</p>
     </div>
     <div class="card">
+      <h3>수업 녹음과 받아쓰기</h3>
+      <p>수업을 녹음하면 받아 적고, 그때 보던 강의 자료의 쪽도 기록합니다. 복습할 때 문장을 눌러 그 부분부터 다시 듣습니다. 녹음 전에는 강사와 학교의 규칙을 확인해 주세요.</p>
+    </div>
+    <div class="card">
       <h3>논문·전공책 PDF 번역</h3>
-      <p>영어 논문을 읽다가 막히는 문장만 선택하면 해석과 낱말 뜻이 나옵니다. 문서 전체를 한 번에 번역하지는 않습니다. (macOS 15 이상)</p>
+      <p>영어 논문을 읽다가 막히는 문장만 선택하면 해석과 낱말 뜻이 나옵니다. 문서 전체를 한 번에 번역하지는 않습니다.</p>
+    </div>
+    <div class="card">
+      <h3>AI 요약과 복습 문제</h3>
+      <p>Apple Intelligence를 켠 Mac에서는 도우미가 강의 자료를 요약하고 핵심 용어와 복습 문제를 만듭니다. 답에 붙은 쪽에서 내용을 확인할 수 있습니다.</p>
     </div>
     <div class="card">
       <h3>PDF 읽어주기</h3>
@@ -245,6 +311,10 @@
     <div class="card">
       <h3>영어 단어장</h3>
       <p>모르는 낱말과 문장을 단어장에 모읍니다. 복습 카드로 외우고, 뜻을 가린 학습지로 인쇄해 직접 써 보거나 Anki로 내보낼 수 있습니다.</p>
+    </div>
+    <div class="card">
+      <h3>서재에서 과목별 정리</h3>
+      <p>문서함으로 자료를 과목별로 나누고, 즐겨찾기와 최근 문서를 선반에서 바로 엽니다. 어디까지 읽었는지도 보입니다.</p>
     </div>
   </div>
 </section>
@@ -266,7 +336,15 @@
     </div>
     <div class="card">
       <h3>개인정보</h3>
-      <p>계정도 광고도 없고, 수집하는 정보가 없습니다. 변환·읽어주기·번역 모두 Mac 안에서 처리합니다.</p>
+      <p>계정도 광고도 없고, 수집하는 정보가 없습니다. 변환·읽어주기·번역·받아쓰기·요약·도우미 모두 Mac 안에서 처리합니다.</p>
+    </div>
+    <div class="card">
+      <h3>그림 만들기</h3>
+      <p>Image Playground로 서재 표지와 단어장 낱말에 그림을 만들어 붙입니다. 기기 안에서 만드는 그림체만 씁니다.</p>
+    </div>
+    <div class="card">
+      <h3>문서 이름 바꾸기</h3>
+      <p>서재에서 문서 이름을 알아보기 쉽게 바꿉니다. 원본 파일의 이름은 그대로 둡니다.</p>
     </div>
   </div>
 </section>
@@ -305,7 +383,13 @@
   <p>네. 문서를 열고 PDF로 저장하면 됩니다. PDF 여러 개를 하나로 합칠 수도 있습니다. 내용을 채워 넣어야 하는 과제 양식은 한별뷰어에서 고칠 수 없으므로, 워드(DOCX)로 저장해 다른 앱에서 작성해야 합니다. 이때 글자만 들어가고 표와 배치는 빠집니다.</p>
 
   <h3>영어 논문 PDF를 번역해 주나요?</h3>
-  <p>읽다가 선택한 문장의 해석과 낱말 뜻을 보여 줍니다. 문서 전체를 한 번에 번역하지는 않습니다. 번역은 macOS 15 이상에서 동작합니다.</p>
+  <p>읽다가 선택한 문장의 해석과 낱말 뜻을 보여 줍니다. 문서 전체를 한 번에 번역하지는 않습니다. 번역은 Mac 안에서 처리합니다.</p>
+
+  <h3>수업을 녹음해 받아 적을 수 있나요?</h3>
+  <p>네. 문서 옆 녹음 모드에서 수업을 녹음하면 Mac 안에서 문장으로 받아 적고, 그때 보던 쪽도 함께 기록합니다. 강의 노트에서 문장을 누르면 그 부분부터 다시 듣습니다. 녹음하기 전에 강사와 학교의 규칙을 확인해 주세요.</p>
+
+  <h3>AI로 문서를 요약할 수 있나요?</h3>
+  <p>Apple Intelligence를 켠 Mac에서는 도우미가 지금 쪽이나 문서 전체를 요약하고, 문서에 대해 물은 것에 근거가 된 쪽과 함께 답합니다. Mac 안의 모델로 처리해 문서를 서버로 보내지 않습니다. AI가 만든 내용은 틀릴 수 있으니 답에 붙은 쪽에서 확인해 주세요.</p>
 
   <h3>PDF를 읽어주는 기능이 있나요?</h3>
   <p>네. PDF와 한글 문서를 소리로 읽어 줍니다. 음성은 한국어에 맞춰져 있어 한글로 된 문서에 알맞습니다.</p>
@@ -314,10 +398,14 @@
 <section id="notes">
   <h2>알아 두실 점</h2>
   <ul class="notes">
+    <li>macOS 26 이상이 필요합니다.</li>
     <li>문서를 고치는 편집 기능은 없습니다.</li>
     <li>워드로 저장하면 글자만 들어가고 표와 배치는 빠집니다.</li>
     <li>읽어주기 음성은 한국어에 맞춰져 있습니다.</li>
-    <li>번역과 단어장은 macOS 15 이상에서 동작합니다.</li>
+    <li>도우미, 강의 요약, 그림 만들기는 Apple Intelligence를 켠 Mac에서 쓸 수 있습니다.</li>
+    <li>AI가 만든 내용은 틀릴 수 있습니다. 답에 붙은 쪽에서 확인해 주세요.</li>
+    <li>받아쓰기는 Mac이 지원하는 언어에서 됩니다. 처음 쓰는 언어는 음성 모델을 내려받습니다.</li>
+    <li>강의를 녹음하기 전에 강사와 학교의 규칙을 확인해 주세요.</li>
     <li>앱 잠금은 앱 화면만 가립니다. 파일 자체는 잠그지 않습니다.</li>
     <li>암호 PDF의 암호는 잊으면 되찾을 수 없습니다.</li>
     <li>한컴오피스가 설치된 Mac에서는 Finder 미리 보기에 한컴오피스의 미리 보기가 나옵니다.</li>
@@ -330,7 +418,7 @@
 
 <section id="privacy">
   <h2>개인정보 처리방침</h2>
-  <p>한별뷰어는 사용자의 개인정보를 수집하지 않습니다. 계정을 만들지 않고, 사용 기록이나 기기 정보를 모으지 않으며, 광고나 분석 도구를 넣지 않았습니다. 사용자가 연 문서와 책갈피·메모·단어장은 Mac 안 앱 전용 폴더에만 저장하고 외부 서버로 보내지 않습니다.</p>
+  <p>한별뷰어는 사용자의 개인정보를 수집하지 않습니다. 계정을 만들지 않고, 사용 기록이나 기기 정보를 모으지 않으며, 광고나 분석 도구를 넣지 않았습니다. 사용자가 연 문서와 책갈피·메모·단어장, 강의 녹음과 받아쓴 글은 Mac 안 앱 전용 폴더에만 저장하고 외부 서버로 보내지 않습니다.</p>
   <p><a href="privacy.html">개인정보 처리방침 전문 보기 (한국어 · English)</a></p>
 </section>
 </main>
