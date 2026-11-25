@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanbyeol Viewer update history</title>
+<meta name="description" content="What is new in each version of Hanbyeol Viewer for Mac, from the first release to now.">
+<link rel="canonical" href="https://sunstardad.github.io/hanbyeolviewer/en/history.html">
+<link rel="alternate" hreflang="ko" href="https://sunstardad.github.io/hanbyeolviewer/history.html">
+<link rel="alternate" hreflang="en" href="https://sunstardad.github.io/hanbyeolviewer/en/history.html">
+<link rel="icon" type="image/png" href="../img/icon.png">
+<style>
+  :root {
+    --bg: #ffffff; --panel: #f3f7f6; --text: #1c2a28; --muted: #5b6b68;
+    --line: #d8e2df; --accent: #0f6b62; --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121a19; --panel: #1a2523; --text: #e6efec; --muted: #9fb0ac;
+            --line: #2b3a37; --accent: #5fc9bb; --accent-text: #0c1514; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+         color: var(--text); background: var(--bg); word-break: keep-all; }
+  a { color: var(--accent); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; font-size: 15px; }
+  header.top .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; }
+  header.top img { width: 32px; height: 32px; }
+  header.top nav { display: flex; align-items: center; gap: 18px; }
+  header.top .home { font-size: 12px; letter-spacing: .28em; color: var(--muted); text-decoration: none; white-space: nowrap; }
+  header.top .home b { color: var(--accent); font-weight: 400; }
+  @media (max-width: 440px) { header.top { gap: 12px; } header.top nav { gap: 12px; } header.top .home { font-size: 11px; letter-spacing: .1em; } }
+  .hero { text-align: center; padding: 36px 0 28px; }
+  .hero img.icon { width: 112px; height: 112px; }
+  h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.25; margin: 18px 0 12px; letter-spacing: -0.02em; }
+  .lead { font-size: 19px; color: var(--muted); max-width: 640px; margin: 0 auto 24px; }
+  .cta { display: inline-block; background: var(--accent); color: var(--accent-text); text-decoration: none;
+         font-weight: 700; padding: 14px 26px; border-radius: 12px; }
+  .cta:hover { filter: brightness(1.08); }
+  .small { font-size: 14px; color: var(--muted); margin-top: 12px; }
+  .shot { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); display: block; }
+  .hero .shot { margin-top: 36px; }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: clamp(22px, 3.4vw, 28px); line-height: 1.35; margin: 0 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 18px; margin: 26px 0 6px; }
+  .feature { display: grid; grid-template-columns: 1fr 1.25fr; gap: 32px; align-items: center; }
+  .feature.flip > div:first-child { order: 2; }
+  .feature ul { padding-left: 20px; margin: 10px 0 0; }
+  .feature li { margin: 4px 0; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 600; color: var(--accent);
+         border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; margin-bottom: 8px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+  #more .cards { grid-template-columns: repeat(2, 1fr); }
+  .card { background: var(--panel); border-radius: 12px; padding: 18px 20px; }
+  .card h3 { margin-top: 0; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+  .faq p { margin: 0; }
+  .notes li { margin: 4px 0; }
+  .center { text-align: center; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; font-size: 14px; color: var(--muted); }
+  footer p { margin: 6px 0; }
+  @media (max-width: 760px) {
+    .feature { grid-template-columns: 1fr; gap: 18px; }
+    .feature.flip > div:first-child { order: 0; }
+    .cards { grid-template-columns: 1fr; }
+    #more .cards { grid-template-columns: 1fr; }
+  }
+</style>
+<style>
+  .history h1 { text-align: left; }
+  .history .lead { margin: 0 0 8px; text-align: left; max-width: none; font-size: 17px; }
+  .release { border-top: 1px solid var(--line); padding: 22px 0 6px; }
+  .release h2 { font-size: 22px; margin: 0 0 2px; letter-spacing: -0.01em; }
+  .release time { color: var(--muted); font-size: 15px; }
+  .release ul { margin: 12px 0 0; padding-left: 1.2em; }
+  .release li { margin: 6px 0; }
+  .release .tag { display: inline-block; font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0 10px; margin-left: 8px; vertical-align: 3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="./"><img src="../img/icon.png" alt="" width="32" height="32">Hanbyeol Viewer</a>
+  <nav><a class="home" href="https://sunstardad.github.io/" aria-label="Sunstardad home">SUN<b>✦</b>STAR<b>·</b>DAD</a><a href="../history.html" lang="ko" hreflang="ko">한국어</a></nav>
+</header>
+<main class="history">
+<h1>Update history</h1>
+<p class="lead">What each version added and fixed. The App Store’s What’s New shows the latest version; the earlier ones are kept here.</p>
+<section class="release" id="v2-0-1">
+  <h2>2.0.1</h2>
+  <time datetime="2026-11-22">November 22, 2026</time>
+  <ul>
+    <li>PDFs up to 1 GB now open (512 MB in 2.0.0).</li>
+    <li>PDFs with many pages and large scanned PDFs no longer fail to open.</li>
+    <li>Extract Pages · Merge PDFs · Batch Convert are faster and use less memory with large PDFs.</li>
+    <li>Values you fill in on a PDF form are kept in copies you save or share.</li>
+  </ul>
+</section>
+<section class="release" id="v2-0-0">
+  <h2>2.0.0<span class="tag">Major update</span></h2>
+  <time datetime="2026-11-21">November 21, 2026</time>
+  <ul>
+    <li>New design: move between Library, Lecture Notes and Wordbook in the sidebar; open the Assistant, Transcription and Notes beside the document.</li>
+    <li>Library shelves: recent documents, Favorites and your collections on shelves, showing how far you have read.</li>
+    <li>Lecture recording: record a class and it is transcribed on your Mac, with the page you were on. Click a sentence to hear it again.</li>
+    <li>Assistant: Apple Intelligence summarizes documents, answers questions with the pages it used, and makes Plain Words, Key Terms, Review Quiz and Rewrite.</li>
+    <li>Pictures: give Library covers and Wordbook words a picture made with Image Playground.</li>
+    <li>Larger PDFs (up to 512 MB). Bars beside the song title move with the music.</li>
+    <li>Requires macOS 26 or later from this version.</li>
+  </ul>
+</section>
+<section class="release" id="v1-3-0">
+  <h2>1.3.0</h2>
+  <time datetime="2026-11-19">November 19, 2026</time>
+  <ul>
+    <li>Read-aloud highlight: the sentence being read is highlighted and followed.</li>
+    <li>Sense Groups split a long English sentence into groups of meaning.</li>
+    <li>Word Study Sheet: turn your words into an A4 sheet to save as PDF or print.</li>
+    <li>Go to Source Document, and Undo Delete in the Wordbook.</li>
+    <li>Fixed printing, and sentences over two lines being translated line by line.</li>
+  </ul>
+</section>
+<section class="release" id="v1-2-0">
+  <h2>1.2.0</h2>
+  <time datetime="2026-11-17">November 17, 2026</time>
+  <ul>
+    <li>Open password-protected PDFs, and save a PDF with a password.</li>
+    <li>App Lock asks for Touch ID or your Mac password when the app opens.</li>
+    <li>All Notes gathers every document&#x27;s highlights, underlines and notes, and exports them.</li>
+  </ul>
+</section>
+<section class="release" id="v1-1-0">
+  <h2>1.1.0</h2>
+  <time datetime="2026-11-15">November 15, 2026</time>
+  <ul>
+    <li>Quick Look in Finder: preview HWP and HWPX files with the Space bar; file icons show the first page.</li>
+    <li>Wordbook review cards with pronunciation, Export for Anki, and editing saved words.</li>
+    <li>Listen in the translation popover repeats the original and translation 1 to 3 times.</li>
+  </ul>
+</section>
+<section class="release" id="v1-0-0">
+  <h2>1.0.0<span class="tag">First release</span></h2>
+  <time datetime="2026-11-14">November 14, 2026</time>
+  <ul>
+    <li>First released as a Mac viewer for HWP and HWPX, PDF, Word documents and comics (CBZ, CBR).</li>
+    <li>Read Aloud with 10 voices and a Sleep Timer, translation of selected text, the Wordbook and Translation Documents.</li>
+    <li>Save HWP and HWPX as PDF, PDF as HWPX or Word; Extract Pages, Merge PDFs and Batch Convert.</li>
+    <li>Highlights, underlines and notes; contents, bookmarks and search; music while you read.</li>
+  </ul>
+</section>
+<p><a href="./">Back to Hanbyeol Viewer</a></p>
+</main>
+<footer>
+  <p><a href="https://sunstardad.github.io/">All apps</a> · <a href="../privacy.html">Privacy Policy</a></p>
+  <p>© 2026 Taebong Kim</p>
+</footer>
+</div>
+</body>
+</html>
