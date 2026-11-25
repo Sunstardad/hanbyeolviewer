@@ -10,14 +10,10 @@
 <link rel="alternate" hreflang="en" href="https://sunstardad.github.io/hanbyeolviewer/en/history.html">
 <link rel="icon" type="image/png" href="img/icon.png">
 <style>
-  :root {
-    --bg: #ffffff; --panel: #f3f7f6; --text: #1c2a28; --muted: #5b6b68;
-    --line: #d8e2df; --accent: #0f6b62; --accent-text: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #121a19; --panel: #1a2523; --text: #e6efec; --muted: #9fb0ac;
-            --line: #2b3a37; --accent: #5fc9bb; --accent-text: #0c1514; }
-  }
+  /* Night only, as the Sunstardad home: no light (day) version. */
+  :root { color-scheme: dark;
+          --bg: #121a19; --panel: #1a2523; --text: #e6efec; --muted: #9fb0ac;
+          --line: #2b3a37; --accent: #5fc9bb; --accent-text: #0c1514; }
   * { box-sizing: border-box; }
   body { margin: 0; font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
          color: var(--text); background: var(--bg); word-break: keep-all; }
