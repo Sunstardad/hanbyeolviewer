@@ -110,6 +110,10 @@
   .feature.flip > div:first-child { order: 2; }
   .feature ul { padding-left: 20px; margin: 10px 0 0; }
   .feature li { margin: 4px 0; }
+  .duo { display: flex; gap: 20px; align-items: flex-end; margin-top: 22px; }
+  .duo figure { margin: 0; }
+  .duo figure:first-child { flex: 0.687 1 0; } .duo figure:last-child { flex: 1.422 1 0; }
+  .duo figcaption { text-align: center; font-size: 13px; color: var(--muted); margin-top: 8px; }
   .tag { display: inline-block; font-size: 13px; font-weight: 600; color: var(--accent);
          border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; margin-bottom: 8px; }
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
@@ -148,6 +152,18 @@
   <img class="shot" src="img/01-library.png" width="1440" height="900"
        alt="이어서 읽기 카드와 강의 노트, 최근 읽은 문서·즐겨찾기 선반을 보여 주는 한별뷰어 서재 화면">
 </div>
+
+<section id="devices">
+  <h2>아이폰·아이패드, 접는 아이폰 듀오까지</h2>
+  <p>2.1부터 같은 앱을 아이폰과 아이패드에서도 씁니다. 접는 아이폰 듀오에서는 접으면 한 화면, 펼치면 넓은 화면에 맞춰 바뀌고, 읽던 쪽은 그대로 이어집니다. 만화는 펼치면 두 쪽으로 봅니다.</p>
+  <div class="duo">
+    <figure><img class="shot" loading="lazy" src="img/duo-folded.jpg" width="698" height="1016"
+         alt="아이폰 듀오를 접었을 때의 한별뷰어 서재 화면"><figcaption>접었을 때</figcaption></figure>
+    <figure><img class="shot" loading="lazy" src="img/duo-unfolded.jpg" width="1426" height="1003"
+         alt="아이폰 듀오를 펼쳤을 때 넓은 화면에 맞춰 표지 다섯 권이 한 줄에 놓인 서재 화면"><figcaption>펼쳤을 때</figcaption></figure>
+  </div>
+  <p class="small">아이폰 듀오 시뮬레이터에서 찍은 화면입니다.</p>
+</section>
 
 <section id="open">
   <div class="feature">

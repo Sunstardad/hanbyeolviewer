@@ -68,6 +68,10 @@
   .feature.flip > div:first-child { order: 2; }
   .feature ul { padding-left: 20px; margin: 10px 0 0; }
   .feature li, .notes li { margin: 4px 0; }
+  .duo { display: flex; gap: 20px; align-items: flex-end; margin-top: 22px; }
+  .duo figure { margin: 0; }
+  .duo figure:first-child { flex: 0.687 1 0; } .duo figure:last-child { flex: 1.422 1 0; }
+  .duo figcaption { text-align: center; font-size: 13px; color: var(--muted); margin-top: 8px; }
   .faq p { margin: 0; }
   .center { text-align: center; }
   footer { border-top: 1px solid var(--line); padding: 28px 0 48px; font-size: 14px; color: var(--muted); }
@@ -96,6 +100,18 @@
   <img class="shot" src="../img/en/01-library.png" width="1440" height="900"
        alt="The Hanbyeol Viewer Library, with a Resume Reading card, a lecture note, and the Recently Read and Favorites shelves">
 </div>
+
+<section id="devices">
+  <h2>On iPhone, iPad and the foldable iPhone Duo</h2>
+  <p>From version 2.1 the same app runs on iPhone and iPad. On the foldable iPhone Duo the layout follows the screen: one page when folded, a wider view when unfolded, and you keep your place in between. Comics show two pages side by side when unfolded.</p>
+  <div class="duo">
+    <figure><img class="shot" loading="lazy" src="../img/duo-folded.jpg" width="698" height="1016"
+         alt="The Hanbyeol Viewer library on a folded iPhone Duo"><figcaption>Folded</figcaption></figure>
+    <figure><img class="shot" loading="lazy" src="../img/duo-unfolded.jpg" width="1426" height="1003"
+         alt="The library on an unfolded iPhone Duo, with five covers in a row across the wider screen"><figcaption>Unfolded</figcaption></figure>
+  </div>
+  <p class="small">Screens taken on the iPhone Duo simulator.</p>
+</section>
 
 <section id="open">
   <div class="feature">
